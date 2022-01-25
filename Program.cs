@@ -23,13 +23,23 @@ namespace OOP
             // newCar.GetInfo();
             List<Vehicle> vehicles = new List<Vehicle>();
 
-            Person person = new Person();
+            Person person = new Person("Tom", newCar);
             person.AddToVehicles(myVehicle);
             person.AddToVehicles(secondVehicle);
             person.AddToVehicles(newCar);
             person.AddToVehicles(anotherCar);
             person.DisplayVehicles();
             
+            IRideable[] variousRideables = new IRideable[]{
+                new Car("Pink", "Dodge", "1500"),
+                new Car("Orange", "Toyota", "Tundra"),
+                new Horse("Silver Queen", 100),
+                new Horse("Betty", 75),
+            };
+            foreach (var rideable in variousRideables)
+            {
+                rideable.Ride(50);
+            }
         }
     }
 

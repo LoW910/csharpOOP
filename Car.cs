@@ -1,9 +1,22 @@
 namespace OOP
 {
-    class Car : Vehicle
+    class Car : Vehicle, IRideable
     {
         public string Make;
         public string Model;
+        public void Ride(double distance){
+            System.Console.WriteLine("I am driving!!!");
+            DistanceTraveled += distance;
+        }
+
+        public double DistanceTraveled {
+            get{
+                return Odometer;
+            }
+            set {
+                Odometer = value;
+                }
+        }
 
         public Car(string color, string make, string model) : base(color)
         {
