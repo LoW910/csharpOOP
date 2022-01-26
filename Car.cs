@@ -18,6 +18,11 @@ namespace OOP
                 }
         }
 
+        public override void MakeNoise()
+        {
+            System.Console.WriteLine("Beeeeep! Beeep! Honk!");
+        }
+
         public Car(string color, string make, string model) : base(color)
         {
             Make = make;

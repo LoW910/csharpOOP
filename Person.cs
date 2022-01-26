@@ -24,6 +24,12 @@ namespace OOP
             Miles += Transport.DistanceTraveled;
         }
 
+        public void GetInfo(){
+            System.Console.WriteLine($"Name: {Name}");
+            System.Console.WriteLine($"Traveled Miles: {Miles}");
+            System.Console.WriteLine($"Transport: {Transport}");
+        }
+
         public void AddToVehicles(Vehicle newV){
             OwnedVehicles.Add(newV);
         }

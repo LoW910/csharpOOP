@@ -1,6 +1,6 @@
 namespace OOP
 {
-    public class Vehicle
+    abstract class Vehicle
         {
             //Fields
             public int NumPassengers;
@@ -25,14 +25,13 @@ namespace OOP
                 System.Console.WriteLine(noise);
             }
             // Method overload
-            public void MakeNoise(){
-                System.Console.WriteLine("Beep!");
-            }
+            public abstract void MakeNoise();
 
             public virtual void GetInfo(){
                 System.Console.WriteLine($"Number of passangers: {NumPassengers}");
                 System.Console.WriteLine($"Color: {Color}");
                 System.Console.WriteLine($"Miles: {Odometer}");
             }
+
         }
 }
