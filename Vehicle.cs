@@ -21,10 +21,6 @@ namespace OOP
             }
 
             // Methods
-            public void MakeNoise(string noise) {
-                System.Console.WriteLine(noise);
-            }
-            // Method overload
             public abstract void MakeNoise();
 
             public virtual void GetInfo(){
